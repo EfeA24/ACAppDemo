@@ -1,0 +1,49 @@
+﻿@model Presentation.ViewBags.ProductViewBag.CreateProductViewBag
+@{
+    ViewData["Title"] = "CreateProduct";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Ürün İşlemleri</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Yeni Ürün Girişi</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="productname">Ürün Adını Giriniz</label>
+                                <input type="text" class="form-control" asp-for="ProductName" id="productname">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="productbrand">Ürün Markası Giriniz</label>
+                                <input type="text" class="form-control" asp-for="ProductBrand" id="productbrand">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="productbarcode">Ürün Barkodunu Giriniz</label>
+                                <input type="text" class="form-control" asp-for="ProductBarcode" id="productbarcode">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="stock">Ürün Stoğunu Giriniz</label>
+                                <input type="text" class="form-control" asp-for="Stock" id="stock">
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <button class="btn btn-primary">Ürünü Ekle</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
